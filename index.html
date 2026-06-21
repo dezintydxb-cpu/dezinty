@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>DEZINTY | Best Website Developer & Web Designer in UAE</title>
+    <meta name="description" content="Looking for the best website developer in UAE? DEZINTY is a premium digital agency offering expert web developer and best website designer services across Dubai, Abu Dhabi, and the UAE.">
+    <meta name="keywords" content="website developer, web developer, website designer, web designer, best website developer, best web developer, best website designer, best web designer, best website developer in UAE, best web developer in UAE, best website designer in UAE, best web designer in UAE, Dubai, Abu Dhabi, UAE digital agency">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://www.dezinty.ae/">
+
+    <!-- Open Graph / Social Sharing SEO -->
+    <meta property="og:title" content="DEZINTY | Best Website Developer & Web Designer in UAE">
+    <meta property="og:description" content="Partner with the best web developer and website designer in the UAE. DEZINTY provides premium website development, SEO, and branding.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dezinty.ae/">
+    <meta property="og:site_name" content="DEZINTY Digital Agency">
+
+    <!-- Schema.org JSON-LD for Google Rich Snippets (Local/Professional SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "DEZINTY",
+      "url": "https://www.dezinty.ae/",
+      "description": "DEZINTY is the best website developer and web designer in UAE, offering premium web development, SEO, and digital marketing services.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "addressCountry": "AE"
+      },
+      "areaServed": "United Arab Emirates",
+      "telephone": "+971501234567",
+      "priceRange": "$$$"
+    }
+    </script>
+    
+    <!-- Google Fonts: Outfit for luxury headings, Inter for clean body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        'gold-light': '#E8D388',
+                        'gold-dark': '#B5952F',
+                        black: '#000000',
+                        'black-soft': '#0A0A0A',
+                        white: '#FFFFFF',
+                        'gray-light': '#F8F9FA',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'luxury': '0 20px 40px -10px rgba(0,0,0,0.08)',
+                        'gold-glow': '0 0 20px rgba(212, 175, 55, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base Styles & Typography */
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Custom Golden Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #D4AF37; /* Golden color */
+            border-radius: 10px;
+            border: 3px solid transparent; 
+            background-clip: padding-box; /* Ensures the scrollbar floats cleanly without vertical lines */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #b5942e; /* Slightly darker gold on hover */
+        }
+
+        /* Fix Double Scrollbar Issue */
+        html {
+            overflow-y: auto;
+            overflow-x: hidden; /* Prevents horizontal scrolling */
+            max-width: 100vw;
+        }
+
+        body {
+            overflow-y: visible; /* Removes the inner/first scrollbar */
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        /* Preloader */
+        #preloader {
+            position: fixed;
+            inset: 0;
+            background: #000000;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+        }
+        .loader-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 0.2em;
+            background: linear-gradient(45deg, #D4AF37, #FFFFFF, #D4AF37);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shine 2s linear infinite;
+        }
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        /* Premium Hover Effects */
+        .hover-underline-gold {
+            position: relative;
+        }
+        .hover-underline-gold::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.4s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .hover-underline-gold:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        /* Glassmorphism */
+        .glass-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        /* Hero Background Gradient */
+        .hero-bg {
+            background: linear-gradient(135deg, #FFFFFF 0%, #FDFBF5 50%, #F5F0E1 100%);
+            position: relative;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.05), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(0, 0, 0, 0.03), transparent 25%);
+            z-index: 0;
+        }
+
+        /* Portfolio Filtering */
+        .portfolio-item {
+            transition: all 0.5s ease;
+        }
+        .portfolio-item.hidden {
+            opacity: 0;
+            transform: scale(0.9);
+            pointer-events: none;
+            position: absolute;
+        }
+
+        /* FAQ Accordion */
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+            opacity: 0;
+        }
+        .faq-content.open {
+            opacity: 1;
+        }
+
+        /* Hide scrollbar for carousels */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* 3D Diagram Animations */
+        .diagram-parent {
+            perspective: 1200px;
+        }
+        .diagram-3d {
+            transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transform-origin: center center;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg) rotateX(0deg);
+        }
+        .diagram-parent:hover .diagram-3d {
+            transform: rotateY(-18deg) rotateX(12deg);
+            box-shadow: -25px 30px 50px rgba(0, 0, 0, 0.15), -10px 15px 20px rgba(212, 175, 55, 0.1) !important;
+        }
+
+        /* Continuous Floating Animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-anim {
+            animation: float 6s ease-in-out infinite;
+        }
+        .float-anim-delay {
+            animation: float 6s ease-in-out infinite;
+            animation-delay: 3s;
+        }
+    
+        /* About section mobile optimization */
+        @media (max-width: 767px){
+            #about{
+                padding-top: 70px !important;
+                padding-bottom: 70px !important;
+            }
+            #about .container{
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            #about .lg\:w-1\/2{
+                width:100% !important;
+            }
+            #about .pr-8{
+                padding-right:0 !important;
+            }
+            #about h2{
+                font-size:2rem !important;
+                line-height:1.2 !important;
+            }
+            #about p{
+                font-size:1rem !important;
+                line-height:1.8 !important;
+            }
+            #about .grid{
+                grid-template-columns:1fr !important;
+                gap:16px !important;
+            }
+            #about img{
+                border-radius:16px !important;
+            }
+            #about .flex{
+                gap:40px !important;
+            }
+        }
+</style>
+
+    <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBBsY39phpUA2PbADetNl4YgYavGWa4YYo2sIEeZBAydpSZ5uzvogqIn8ftqmjlxySuygXLxdEoo-ll5rW76FT2Zru1pu46jpd-34Fc5uCaO1nSd_nGh1ktRbnLhgCjLKQdEW1mempdlbxkEG4la0M-892f-mpics3EAK8VFQ5QUNspQg8VCltFjKhKIo/s1121/1000254010.png">
+</head>
+<body class="font-sans text-black bg-white no-scrollbar overflow-x-hidden">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-text">DEZINTY</div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-500 py-6 bg-transparent">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-heading font-bold tracking-widest text-black flex items-center gap-2 group">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBBsY39phpUA2PbADetNl4YgYavGWa4YYo2sIEeZBAydpSZ5uzvogqIn8ftqmjlxySuygXLxdEoo-ll5rW76FT2Zru1pu46jpd-34Fc5uCaO1nSd_nGh1ktRbnLhgCjLKQdEW1mempdlbxkEG4la0M-892f-mpics3EAK8VFQ5QUNspQg8VCltFjKhKIo/s1121/1000254010.png" alt="DEZINTY Logo - Best Web Developer" class="w-10 h-10 rounded-sm group-hover:opacity-80 transition-opacity duration-300">
+                DEZINTY
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex space-x-8 items-center font-medium text-sm tracking-wide">
+                <a href="#home" class="hover-underline-gold text-black">Home</a>
+                <a href="#about" class="hover-underline-gold text-black">About Us</a>
+                <a href="#services" class="hover-underline-gold text-black">Services</a>
+                <a href="#portfolio" class="hover-underline-gold text-black">Portfolio</a>
+                <a href="#process" class="hover-underline-gold text-black">Process</a>
+                <a href="#testimonials" class="hover-underline-gold text-black">Testimonials</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden lg:block">
+                <a href="#contact" class="bg-black text-white px-6 py-3 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-gold transition-colors duration-300 border border-black hover:border-gold shadow-md">
+                    Get in Touch
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl text-black focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center space-y-8 lg:hidden">
+            <button id="mobile-menu-close" class="absolute top-8 right-8 text-3xl text-black focus:outline-none">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            <a href="#home" class="mobile-link text-2xl font-heading font-semibold hover:text-gold transition-colors">Home</a>
+            <a href="#about" class="mobile-link text-2xl font-heading font-semibold hover:text-gold transition-colors">About Us</a>
+            <a href="#services" class="mobile-link text-2xl font-heading font-semibold hover:text-gold transition-colors">Services</a>
+            <a href="#portfolio" class="mobile-link text-2xl font-heading font-semibold hover:text-gold transition-colors">Portfolio</a>
+            <a href="#process" class="mobile-link text-2xl font-heading font-semibold hover:text-gold transition-colors">Process</a>
+            <a href="#contact" class="mobile-link text-2xl font-heading font-semibold hover:text-gold transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-24 pb-12 relative overflow-hidden">
+        <div class="container mx-auto px-6 md:px-12 relative z-10 flex flex-col lg:flex-row items-center">
+            
+            <div class="w-full lg:w-3/5 pr-0 lg:pr-12 text-center lg:text-left mt-12 lg:mt-0">
+                <div data-aos="fade-up">
+                    <h2 class="inline-block py-1 px-3 border border-gold text-gold text-xs font-bold uppercase tracking-widest rounded-full mb-6 bg-gold/5 m-0">
+                        Best Website Developer & Web Designer in UAE
+                    </h2>
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-6 text-black" data-aos="fade-up" data-aos-delay="100">
+                    Transforming Businesses Into <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-600">Powerful</span> Digital Brands
+                </h1>
+                <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                    As the premier <strong>website developer</strong> and <strong>best web designer</strong> in the UAE, we help businesses grow through custom web development, digital marketing, SEO, and social media management solutions. 
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#contact" class="w-full sm:w-auto bg-black text-white px-8 py-4 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-gold transition-all duration-300 text-center hover:shadow-gold-glow">
+                        Get Started
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto bg-transparent border border-black text-black px-8 py-4 rounded-lg text-sm font-semibold uppercase tracking-wider hover:border-gold hover:text-gold transition-all duration-300 text-center group flex items-center justify-center gap-2">
+                        View Services
+                        <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="flex flex-wrap justify-center lg:justify-start gap-6 mt-16 text-sm font-medium text-black/70" data-aos="fade-up" data-aos-delay="400">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-gold"></i> Best Web Developer UAE</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-gold"></i> ROI Driven</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-gold"></i> Premium Quality</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-gold"></i> Dedicated Support</span>
+                </div>
+            </div>
+
+            <!-- Right side Abstract Graphic / 3D Diagram -->
+            <div class="w-full lg:w-2/5 mt-16 lg:mt-0 hidden md:block perspective-[1000px]" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                <div class="relative w-full aspect-square max-w-lg mx-auto diagram-parent">
+                    
+                    <!-- Main 3D Container -->
+                    <div class="relative w-full h-[400px] mt-10 bg-[#f9fafb] rounded-xl shadow-luxury border border-gray-100 overflow-hidden diagram-3d flex flex-col z-10 group">
+                        
+                        <!-- Top Browser Bar -->
+                        <div class="h-10 bg-black w-full flex items-center px-4 gap-2 shrink-0">
+                            <div class="w-3 h-3 rounded-full bg-white/20"></div>
+                            <div class="w-3 h-3 rounded-full bg-white/20"></div>
+                            <div class="w-3 h-3 rounded-full bg-white/20"></div>
+                        </div>
+
+                        <!-- Content Area -->
+                        <div class="flex-1 p-6 flex gap-6 bg-white relative">
+                            
+                            <!-- Left Sidebar Skeleton -->
+                            <div class="w-1/3 flex flex-col gap-8 pt-2 border-r border-gray-100 pr-4">
+                                <div class="space-y-3">
+                                    <div class="h-3 w-3/4 bg-gold rounded-full"></div>
+                                    <div class="h-2 w-full bg-gray-200 rounded-full"></div>
+                                    <div class="h-2 w-5/6 bg-gray-200 rounded-full"></div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="h-2 w-full bg-gray-200 rounded-full"></div>
+                                    <div class="h-2 w-4/5 bg-gray-200 rounded-full"></div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="h-2 w-full bg-black rounded-full"></div>
+                                    <div class="h-2 w-2/3 bg-gray-200 rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <!-- Right Chart Area -->
+                            <div class="w-2/3 bg-[#f8fafc] rounded-lg p-4 flex items-end justify-between gap-3 relative h-full">
+                                <div class="w-full bg-black rounded-t-md h-[25%] transition-opacity duration-300 ease-out hover:opacity-80"></div>
+                                <div class="w-full bg-gold rounded-t-md h-[45%] transition-opacity duration-300 ease-out hover:opacity-80"></div>
+                                <div class="w-full bg-black rounded-t-md h-[15%] transition-opacity duration-300 ease-out hover:opacity-80"></div>
+                                <div class="w-full bg-gold rounded-t-md h-[65%] transition-opacity duration-300 ease-out hover:opacity-80"></div>
+                                <div class="w-full bg-black rounded-t-md h-[35%] transition-opacity duration-300 ease-out hover:opacity-80"></div>
+                                <div class="w-full bg-gold rounded-t-md h-[85%] transition-opacity duration-300 ease-out hover:opacity-80"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Card 1: Traffic Growth -->
+                    <div class="absolute -top-4 right-0 bg-white p-4 rounded-lg shadow-xl border border-gray-100 flex items-center gap-4 z-20 float-anim">
+                        <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold">
+                            <i class="fa-solid fa-chart-line text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-black text-sm leading-tight">Traffic Growth</h4>
+                            <p class="text-xs text-gray-500">+124% this month</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Card 2: SEO Ranking -->
+                    <div class="absolute bottom-10 -left-12 bg-white p-4 rounded-lg shadow-xl border border-gray-100 flex items-center gap-4 z-20 float-anim-delay">
+                        <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold">
+                            <i class="fa-solid fa-bullseye text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-black text-sm leading-tight">SEO Ranking</h4>
+                            <p class="text-xs text-gray-500">Top 3 positions</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                
+                <div class="w-full lg:w-1/2 pb-8 lg:pb-0 pr-8 lg:pr-12" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="relative w-full">
+                        <!-- Main Image -->
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhR4JH7WCwnKTkHb_bL3BxjNR6AAuEuzmXKYEFKAhXdpZhk2agU-WqW0aFovOPJQlulTZOWCWCYDJ1OYmCtLtXX2RkUxb7gW8du8dnLBu1ddLrd3ac7s3rcssXPxEsMDvUp2W_cunoBrBoCQwJoHDs7ZgG43bP2wc2eMbXLzSthVxD3cO0SvBmI_2WGyucl/s1106/Gemini_Generated_Image_3a61cn3a61cn3a61.png" alt="Best Web Designer and Website Developer Team UAE" class="rounded-xl shadow-luxury object-cover aspect-[4/3] w-full z-10 relative">
+                        
+                        <!-- Gold offset background (Back Card) -->
+                        <div class="absolute -bottom-8 -right-8 w-full h-full bg-gold rounded-xl -z-10 hidden md:block"></div>
+                        
+                        <!-- Floating badge (Back Card - Left side) -->
+                        <div class="absolute -left-12 top-1/2 transform -translate-y-1/2 bg-black text-white px-6 py-8 rounded-xl shadow-xl hidden lg:block border-l-4 border-gold z-20 min-w-[160px]">
+                            <div class="text-5xl font-heading font-bold text-gold mb-2">5+</div>
+                            <div class="text-sm font-medium uppercase tracking-wider leading-snug">Years of<br>Excellence</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2">
+                    <h4 class="text-gold font-bold uppercase tracking-widest text-sm mb-2" data-aos="fade-left">Who We Are</h4>
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-black mb-6" data-aos="fade-left" data-aos-delay="100">Your Best Website Developer in UAE</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed" data-aos="fade-left" data-aos-delay="200">
+                        DEZINTY is recognized as the <strong>best website developer in UAE</strong> and a leading digital marketing agency. We help businesses build a powerful online presence through expert <strong>web designer</strong> services, custom development, SEO, and performance-driven digital marketing solutions.
+                    </p>
+                    <p class="text-gray-600 mb-10 leading-relaxed" data-aos="fade-left" data-aos-delay="300">
+                        With a strong focus on performance, creativity, and technology, our team of the <strong>best web developers</strong> partner with businesses throughout Dubai, Abu Dhabi, Sharjah, and across the UAE to deliver measurable results.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10" data-aos="fade-up" data-aos-delay="400">
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-2 border-black hover:border-gold transition-colors">
+                            <h4 class="font-heading font-bold text-lg mb-2"><i class="fa-solid fa-bullseye text-gold mr-2"></i>Mission</h4>
+                            <p class="text-sm text-gray-600">Empowering businesses through innovative and scalable digital solutions.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-2 border-black hover:border-gold transition-colors">
+                            <h4 class="font-heading font-bold text-lg mb-2"><i class="fa-solid fa-eye text-gold mr-2"></i>Vision</h4>
+                            <p class="text-sm text-gray-600">To maintain our position as the best web designer and digital growth partner in the UAE.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="500">
+                        <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-semibold uppercase tracking-wider text-black">Innovation</span>
+                        <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-semibold uppercase tracking-wider text-black">Excellence</span>
+                        <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-semibold uppercase tracking-wider text-black">Transparency</span>
+                        <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-semibold uppercase tracking-wider text-black">Client Success</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h4 class="text-gold font-bold uppercase tracking-widest text-sm mb-2">What We Do</h4>
+                <h2 class="text-4xl md:text-5xl font-heading font-bold text-black mb-6">Our Premium Services</h2>
+                <p class="text-gray-600">Comprehensive digital solutions engineered for performance, aesthetics, and measurable business growth by the best website designers in the region.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="group relative p-8 bg-white shadow-sm hover:shadow-luxury transition-all duration-500 rounded-xl border border-gray-100 overflow-hidden" data-aos="fade-up" data-aos-delay="0">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="w-14 h-14 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
+                        <i class="fa-solid fa-laptop-code text-2xl text-black group-hover:text-gold transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-3 text-black">Website Development</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed border-b border-gray-100 pb-6">Hire the best web developer in UAE for custom websites designed for performance, user experience, and business growth.</p>
+                    <ul class="space-y-3 text-sm text-gray-700 font-medium">
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Corporate Websites</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>E-commerce Platforms</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Custom Web Applications</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>High-Converting Landing Pages</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group relative p-8 bg-white shadow-sm hover:shadow-luxury transition-all duration-500 rounded-xl border border-gray-100 overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="w-14 h-14 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
+                        <i class="fa-regular fa-calendar-check text-2xl text-black group-hover:text-gold transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-3 text-black">Social Media Management</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed border-b border-gray-100 pb-6">Build and manage a powerful, engaging brand presence across all social platforms.</p>
+                    <ul class="space-y-3 text-sm text-gray-700 font-medium">
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Content Strategy & Planning</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Premium Post Design</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Community Management</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Performance Analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group relative p-8 bg-white shadow-sm hover:shadow-luxury transition-all duration-500 rounded-xl border border-gray-100 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="w-14 h-14 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
+                        <i class="fa-solid fa-bullhorn text-2xl text-black group-hover:text-gold transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-3 text-black">Social Media Marketing</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed border-b border-gray-100 pb-6">Generate leads, increase awareness, and drive massive conversions through paid ads.</p>
+                    <ul class="space-y-3 text-sm text-gray-700 font-medium">
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Facebook & Instagram Ads</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>LinkedIn B2B Campaigns</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Advanced Audience Targeting</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Dynamic Retargeting</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group relative p-8 bg-white shadow-sm hover:shadow-luxury transition-all duration-500 rounded-xl border border-gray-100 overflow-hidden" data-aos="fade-up" data-aos-delay="0">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="w-14 h-14 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
+                        <i class="fa-solid fa-magnifying-glass-chart text-2xl text-black group-hover:text-gold transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-3 text-black">SEO Optimization</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed border-b border-gray-100 pb-6">Dominate search rankings and drive high-intent organic traffic to your website.</p>
+                    <ul class="space-y-3 text-sm text-gray-700 font-medium">
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Comprehensive Technical SEO</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>On-Page & Local SEO</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Deep Keyword Research</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Authority Link Building</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="group relative p-8 bg-white shadow-sm hover:shadow-luxury transition-all duration-500 rounded-xl border border-gray-100 overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="w-14 h-14 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
+                        <i class="fa-solid fa-pen-nib text-2xl text-black group-hover:text-gold transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-3 text-black">Website Designer & Branding</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed border-b border-gray-100 pb-6">Work with the best website designer in UAE to create memorable, visually stunning brands.</p>
+                    <ul class="space-y-3 text-sm text-gray-700 font-medium">
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Custom Logo Design</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Complete Brand Identity</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Corporate Profile Design</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>UI/UX Web Design</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="group relative p-8 bg-white shadow-sm hover:shadow-luxury transition-all duration-500 rounded-xl border border-gray-100 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="w-14 h-14 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
+                        <i class="fa-solid fa-chart-pie text-2xl text-black group-hover:text-gold transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-3 text-black">Digital Marketing</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed border-b border-gray-100 pb-6">Comprehensive digital growth strategies tailored directly to your business objectives.</p>
+                    <ul class="space-y-3 text-sm text-gray-700 font-medium">
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Lead Generation Funnels</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Conversion Rate Optimization</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Holistic Marketing Strategy</li>
+                        <li><i class="fa-solid fa-check text-gold mr-3"></i>Advanced Analytics & Reporting</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose DEZINTY -->
+    <section class="py-24 bg-black text-white relative">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+        <div class="container mx-auto px-6 md:px-12 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-heading font-bold mb-4">Why Businesses Choose <span class="text-gold">DEZINTY</span></h2>
+                <p class="text-gray-400">The pillars of our premium service delivery as the best web developers in UAE.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <!-- Items -->
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center hover:bg-white/10 transition-colors" data-aos="zoom-in" data-aos-delay="0">
+                    <i class="fa-solid fa-chess-knight text-3xl text-gold mb-4"></i>
+                    <h4 class="font-heading font-semibold text-lg">Strategic Planning</h4>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center hover:bg-white/10 transition-colors" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-palette text-3xl text-gold mb-4"></i>
+                    <h4 class="font-heading font-semibold text-lg">Creative Excellence</h4>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center hover:bg-white/10 transition-colors" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-users-gear text-3xl text-gold mb-4"></i>
+                    <h4 class="font-heading font-semibold text-lg">Experienced Team</h4>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center hover:bg-white/10 transition-colors" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-comments text-3xl text-gold mb-4"></i>
+                    <h4 class="font-heading font-semibold text-lg">Transparent Comm.</h4>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center hover:bg-white/10 transition-colors" data-aos="zoom-in" data-aos-delay="0">
+                    <i class="fa-solid fa-rocket text-3xl text-gold mb-4"></i>
+                    <h4 class="font-heading font-semibold text-lg">Performance Focused</h4>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center hover:bg-white/10 transition-colors" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-handshake text-3xl text-gold mb-4"></i>
+                    <h4 class="font-heading font-semibold text-lg">Long-Term Partnership</h4>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center hover:bg-white/10 transition-colors" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-lightbulb text-3xl text-gold mb-4"></i>
+                    <h4 class="font-heading font-semibold text-lg">Innovative Solutions</h4>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center hover:bg-white/10 transition-colors" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-headset text-3xl text-gold mb-4"></i>
+                    <h4 class="font-heading font-semibold text-lg">Dedicated Support</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 md:py-24 bg-gray-50 overflow-hidden border-t border-gray-100">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16 md:mb-24" data-aos="fade-up">
+                <h4 class="text-gold font-bold uppercase tracking-widest text-sm mb-2">How We Work</h4>
+                <h2 class="text-3xl md:text-5xl font-heading font-bold text-black mb-6">Our Proven Process</h2>
+                <p class="text-gray-600">A systematic, transparent approach to delivering exceptional digital results.</p>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto pl-0 md:pl-0">
+                <!-- Center Line -->
+                <div class="absolute left-[24px] md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-gray-200"></div>
+
+                <!-- Step 1 -->
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 md:mb-16 w-full relative group pl-[60px] md:pl-0" data-aos="fade-up">
+                    <!-- Left Card -->
+                    <div class="w-full md:w-1/2 md:pr-8 relative z-20 flex justify-start md:justify-end">
+                        <div class="bg-white border border-gray-100 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 w-full max-w-[360px]">
+                            <span class="inline-block bg-black text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">Step 01</span>
+                            <h3 class="text-xl md:text-2xl font-bold font-heading text-black mb-3 group-hover:text-gold transition-colors duration-300">Discovery & Consultation</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">We start by deeply understanding your business, target audience, goals, and the competitive landscape.</p>
+                        </div>
+                    </div>
+                    <!-- Center Ring -->
+                    <div class="absolute left-[12px] md:left-1/2 transform md:-translate-x-1/2 flex justify-center mt-6 md:mt-0 z-20">
+                        <div class="w-6 h-6 rounded-full bg-white border-[4px] border-gold ring-4 ring-white group-hover:scale-125 transition-transform duration-300"></div>
+                    </div>
+                    <!-- Right Spacer -->
+                    <div class="w-full md:w-1/2 hidden md:block"></div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 md:mb-16 w-full relative group pl-[60px] md:pl-0" data-aos="fade-up">
+                    <!-- Left Spacer -->
+                    <div class="w-full md:w-1/2 hidden md:block"></div>
+                    <!-- Center Ring -->
+                    <div class="absolute left-[12px] md:left-1/2 transform md:-translate-x-1/2 flex justify-center mt-6 md:mt-0 z-20">
+                        <div class="w-6 h-6 rounded-full bg-white border-[4px] border-gold ring-4 ring-white group-hover:scale-125 transition-transform duration-300"></div>
+                    </div>
+                    <!-- Right Card -->
+                    <div class="w-full md:w-1/2 md:pl-8 relative z-20 flex justify-start md:justify-start">
+                        <div class="bg-white border border-gray-100 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 w-full max-w-[360px]">
+                            <span class="inline-block bg-black text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">Step 02</span>
+                            <h3 class="text-xl md:text-2xl font-bold font-heading text-black mb-3 group-hover:text-gold transition-colors duration-300">Strategy Development</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Crafting a bespoke digital roadmap, selecting the right channels, and setting measurable KPIs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 md:mb-16 w-full relative group pl-[60px] md:pl-0" data-aos="fade-up">
+                    <!-- Left Card -->
+                    <div class="w-full md:w-1/2 md:pr-8 relative z-20 flex justify-start md:justify-end">
+                        <div class="bg-white border border-gray-100 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 w-full max-w-[360px]">
+                            <span class="inline-block bg-black text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">Step 03</span>
+                            <h3 class="text-xl md:text-2xl font-bold font-heading text-black mb-3 group-hover:text-gold transition-colors duration-300">Design & Planning</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Creating wireframes, UI/UX designs, and brand assets that align perfectly with the strategy.</p>
+                        </div>
+                    </div>
+                    <!-- Center Ring -->
+                    <div class="absolute left-[12px] md:left-1/2 transform md:-translate-x-1/2 flex justify-center mt-6 md:mt-0 z-20">
+                        <div class="w-6 h-6 rounded-full bg-white border-[4px] border-gold ring-4 ring-white group-hover:scale-125 transition-transform duration-300"></div>
+                    </div>
+                    <!-- Right Spacer -->
+                    <div class="w-full md:w-1/2 hidden md:block"></div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 md:mb-16 w-full relative group pl-[60px] md:pl-0" data-aos="fade-up">
+                    <!-- Left Spacer -->
+                    <div class="w-full md:w-1/2 hidden md:block"></div>
+                    <!-- Center Ring -->
+                    <div class="absolute left-[12px] md:left-1/2 transform md:-translate-x-1/2 flex justify-center mt-6 md:mt-0 z-20">
+                        <div class="w-6 h-6 rounded-full bg-white border-[4px] border-gold ring-4 ring-white group-hover:scale-125 transition-transform duration-300"></div>
+                    </div>
+                    <!-- Right Card -->
+                    <div class="w-full md:w-1/2 md:pl-8 relative z-20 flex justify-start md:justify-start">
+                        <div class="bg-white border border-gray-100 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 w-full max-w-[360px]">
+                            <span class="inline-block bg-black text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">Step 04</span>
+                            <h3 class="text-xl md:text-2xl font-bold font-heading text-black mb-3 group-hover:text-gold transition-colors duration-300">Development & Execution</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Building the digital assets using robust, scalable technologies and launching campaigns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Step 5 -->
+                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 md:mb-16 w-full relative group pl-[60px] md:pl-0" data-aos="fade-up">
+                    <!-- Left Card -->
+                    <div class="w-full md:w-1/2 md:pr-8 relative z-20 flex justify-start md:justify-end">
+                        <div class="bg-white border border-gray-100 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 w-full max-w-[360px]">
+                            <span class="inline-block bg-black text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">Step 05</span>
+                            <h3 class="text-xl md:text-2xl font-bold font-heading text-black mb-3 group-hover:text-gold transition-colors duration-300">Testing & Optimization</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Rigorous quality assurance, A/B testing, and performance tuning before going live.</p>
+                        </div>
+                    </div>
+                    <!-- Center Ring -->
+                    <div class="absolute left-[12px] md:left-1/2 transform md:-translate-x-1/2 flex justify-center mt-6 md:mt-0 z-20">
+                        <div class="w-6 h-6 rounded-full bg-white border-[4px] border-gold ring-4 ring-white group-hover:scale-125 transition-transform duration-300"></div>
+                    </div>
+                    <!-- Right Spacer -->
+                    <div class="w-full md:w-1/2 hidden md:block"></div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between w-full relative group pl-[60px] md:pl-0" data-aos="fade-up">
+                    <!-- Left Spacer -->
+                    <div class="w-full md:w-1/2 hidden md:block"></div>
+                    <!-- Center Ring -->
+                    <div class="absolute left-[12px] md:left-1/2 transform md:-translate-x-1/2 flex justify-center mt-6 md:mt-0 z-20">
+                        <div class="w-6 h-6 rounded-full bg-white border-[4px] border-gold ring-4 ring-white group-hover:scale-125 transition-transform duration-300"></div>
+                    </div>
+                    <!-- Right Card -->
+                    <div class="w-full md:w-1/2 md:pl-8 relative z-20 flex justify-start md:justify-start">
+                        <div class="bg-white border border-gray-100 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 w-full max-w-[360px]">
+                            <span class="inline-block bg-black text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">Step 06</span>
+                            <h3 class="text-xl md:text-2xl font-bold font-heading text-black mb-3 group-hover:text-gold transition-colors duration-300">Launch & Growth</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Going live and initiating ongoing marketing, monitoring, and scaling to ensure continuous ROI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h4 class="text-gold font-bold uppercase tracking-widest text-sm mb-2">Our Partners</h4>
+                <h2 class="text-4xl md:text-5xl font-heading font-bold text-black mb-6">Businesses We Work With</h2>
+                <p class="text-gray-600">Driving measurable growth and digital excellence for industry-leading brands across multiple sectors.</p>
+            </div>
+
+            <!-- Clients Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="portfolio-grid">
+                
+                <!-- Client 1 -->
+                <div class="bg-white rounded-xl border border-gray-100 p-8 flex flex-col items-center text-center shadow-sm hover:shadow-luxury transition-all duration-300 h-full" data-aos="flip-left" data-aos-delay="0">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgldtoXYWgZalEEABlMPN_-pDeqPbALA68PqBcipWrDhbdk3fuyDT1uEX5RyjtRjxg_RffbztWL4zDusMGsZsHHts2BTk0auzAC66lUf51QyeIASZVkIOCokP88IfSfIh3qIJoGau5tHKoXUZULDPPvvHitScUfQsccQU4Mxbpux-V4FVaCas9nxNMwv88c/s1254/7620d12c-4748-4f0d-a38a-0748758ac575.png" alt="Al Qasr Properties - Best Website Developer Client" class="w-24 h-24 object-contain rounded-2xl border border-gray-100 p-3 bg-gray-50 mb-6">
+                    <h3 class="text-xl font-bold font-heading text-black mb-4 w-full border-b border-gray-100 pb-4">Al Qasr Properties</h3>
+                    <div class="text-sm text-gray-600 space-y-2 mb-8 w-full flex-grow">
+                        <p><span class="font-bold text-black">Industry:</span> Real Estate</p>
+                        <p><span class="font-bold text-black">Services:</span> Website Dev & SEO</p>
+                    </div>
+                    <div class="w-full bg-gold/5 border-l-[3px] border-gold p-4 text-left mt-auto">
+                        <p class="text-sm font-medium text-black">210% increase in lead generation</p>
+                    </div>
+                </div>
+
+                <!-- Client 2 -->
+                <div class="bg-white rounded-xl border border-gray-100 p-8 flex flex-col items-center text-center shadow-sm hover:shadow-luxury transition-all duration-300 h-full" data-aos="flip-left" data-aos-delay="100">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijO09I6KOqsZz2aurJSeH0ZI94nnaNFYlXkaEk86HbN59pU4ewmJlhA2U9Jy_AdHVZGP3oAKj35lpQrbhtavsrs2Yn0p7Bnbs58I_WNRmneiwGUsu0tzTMgsTQjx9eArS-wMaY_l6Fz0ZPQpe4_caQ8YusRYZChZ3DBXoMqVPJoteDzNhIG0RQ08qAINzV/s1254/298e0a46-ee54-4795-b58a-7032f0e8f48a.png" alt="Nexus Financial - Web Designer Client" class="w-24 h-24 object-contain rounded-2xl border border-gray-100 p-3 bg-gray-50 mb-6">
+                    <h3 class="text-xl font-bold font-heading text-black mb-4 w-full border-b border-gray-100 pb-4">Nexus Financial</h3>
+                    <div class="text-sm text-gray-600 space-y-2 mb-8 w-full flex-grow">
+                        <p><span class="font-bold text-black">Industry:</span> Wealth Management</p>
+                        <p><span class="font-bold text-black">Services:</span> Corporate Branding</p>
+                    </div>
+                    <div class="w-full bg-gold/5 border-l-[3px] border-gold p-4 text-left mt-auto">
+                        <p class="text-sm font-medium text-black">Complete brand repositioning</p>
+                    </div>
+                </div>
+
+                <!-- Client 3 -->
+                <div class="bg-white rounded-xl border border-gray-100 p-8 flex flex-col items-center text-center shadow-sm hover:shadow-luxury transition-all duration-300 h-full" data-aos="flip-left" data-aos-delay="200">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPDr1QqKQHrfBRmn_aZRdtT1Igpq4NMOOThxejOQ3WqdGzF1rj96QZL3s2egc1-Jrg7y-dtDONsNTb_N6krsGSRZRGGrMaBFLk7nT4m3puWpEqLdVqwpFqsJZyKs0NC-yUyMHAuNtNYaE_mOVcHWQ38B4vkAWGGIzxSVo9jMDD6dRZJzld_7_2lCuDP4BF/s1254/6fc19671-e060-49e5-aa8d-d3b957ac1711.png" alt="Lumina Hospitality Logo" class="w-24 h-24 object-contain rounded-2xl border border-gray-100 p-3 bg-gray-50 mb-6">
+                    <h3 class="text-xl font-bold font-heading text-black mb-4 w-full border-b border-gray-100 pb-4">Lumina Hospitality</h3>
+                    <div class="text-sm text-gray-600 space-y-2 mb-8 w-full flex-grow">
+                        <p><span class="font-bold text-black">Industry:</span> Luxury Hotels</p>
+                        <p><span class="font-bold text-black">Services:</span> Social Media Marketing</p>
+                    </div>
+                    <div class="w-full bg-gold/5 border-l-[3px] border-gold p-4 text-left mt-auto">
+                        <p class="text-sm font-medium text-black">4.5x return on ad spend (ROAS)</p>
+                    </div>
+                </div>
+
+                <!-- Client 4 -->
+                <div class="bg-white rounded-xl border border-gray-100 p-8 flex flex-col items-center text-center shadow-sm hover:shadow-luxury transition-all duration-300 h-full" data-aos="flip-left" data-aos-delay="300">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7AfcCmXPgkNWUrXDGXnMcALHPaUWzzTP7fDO9mZERECPdTwBJgLGFE89p0e2p6Fw02b6Lf69wkQJP6XNt1LcyLDMSropT4AlvG9uk3w6WO4UaZjhPzYFLuyV2SQGIFDWRx_YSm6lH-JmYvYmvLo0RvHURpK1p0XcAXc6I_PRYLsap0Ob2zb14o7lgnFkX/s1254/239bba34-2a57-483c-9cbb-bc51d934ac04.png" alt="Vertex Engineering Logo" class="w-24 h-24 object-contain rounded-2xl border border-gray-100 p-3 bg-gray-50 mb-6">
+                    <h3 class="text-xl font-bold font-heading text-black mb-4 w-full border-b border-gray-100 pb-4">Vertex Engineering</h3>
+                    <div class="text-sm text-gray-600 space-y-2 mb-8 w-full flex-grow">
+                        <p><span class="font-bold text-black">Industry:</span> Construction</p>
+                        <p><span class="font-bold text-black">Services:</span> Web App Development</p>
+                    </div>
+                    <div class="w-full bg-gold/5 border-l-[3px] border-gold p-4 text-left mt-auto">
+                        <p class="text-sm font-medium text-black">Streamlined client portal operations</p>
+                    </div>
+                </div>
+
+                <!-- Client 5 -->
+                <div class="bg-white rounded-xl border border-gray-100 p-8 flex flex-col items-center text-center shadow-sm hover:shadow-luxury transition-all duration-300 h-full mt-2 lg:mt-0" data-aos="flip-left" data-aos-delay="0">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp5mY1Wi_1bnfO3NXxhQr8-Fqrz9MwhmNaRWp5ZYpzKSqYgQQq4M99ShhMMM1JUbghYuyb5iuX_KVSlTkRNjps0_ivG5LYokVJ-jBL8Ei_CyIrUYPiXf9a7pHKB80-joGefjtQvsb_Ya_hkrjNA6IFRQea15PU-WTqlDpO1cYukTnkHU49tURLAVLstm0Y/s1254/f971e4a4-29e7-4bd6-a127-9c2188a62a6f.png" alt="Crescent Medical Logo" class="w-24 h-24 object-contain rounded-2xl border border-gray-100 p-3 bg-gray-50 mb-6">
+                    <h3 class="text-xl font-bold font-heading text-black mb-4 w-full border-b border-gray-100 pb-4">Crescent Medical</h3>
+                    <div class="text-sm text-gray-600 space-y-2 mb-8 w-full flex-grow">
+                        <p><span class="font-bold text-black">Industry:</span> Healthcare</p>
+                        <p><span class="font-bold text-black">Services:</span> SEO & Content Marketing</p>
+                    </div>
+                    <div class="w-full bg-gold/5 border-l-[3px] border-gold p-4 text-left mt-auto">
+                        <p class="text-sm font-medium text-black">#1 ranking for 50+ key procedures</p>
+                    </div>
+                </div>
+
+                <!-- Client 6 -->
+                <div class="bg-white rounded-xl border border-gray-100 p-8 flex flex-col items-center text-center shadow-sm hover:shadow-luxury transition-all duration-300 h-full mt-2 lg:mt-0" data-aos="flip-left" data-aos-delay="100">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiapY-jrO4C1sAKJX-hEf5Aac8f3CTfpidc7ZeKi0AKPerQRN7wptC9b1paneKyGg8XxVk3ZNfFy-SnWWJFDSV16AsCQ-iHlTqSDETm6vibuqX6hmEULEEtIUCA2B5mIBr7kI8dPdolrAbfYyFLVW3f6hlsC18ZcP00PPBHAV3yjOd1ehK1FbBn9CMfrTI8/s1254/f2432e9f-f347-4e5f-8b81-f6330ae26702.png" alt="Meridian Logistics Logo" class="w-24 h-24 object-contain rounded-2xl border border-gray-100 p-3 bg-gray-50 mb-6">
+                    <h3 class="text-xl font-bold font-heading text-black mb-4 w-full border-b border-gray-100 pb-4">Meridian Logistics</h3>
+                    <div class="text-sm text-gray-600 space-y-2 mb-8 w-full flex-grow">
+                        <p><span class="font-bold text-black">Industry:</span> Supply Chain</p>
+                        <p><span class="font-bold text-black">Services:</span> B2B Lead Generation</p>
+                    </div>
+                    <div class="w-full bg-gold/5 border-l-[3px] border-gold p-4 text-left mt-auto">
+                        <p class="text-sm font-medium text-black">300% growth in B2B inquiries</p>
+                    </div>
+                </div>
+
+                <!-- Client 7 -->
+                <div class="bg-white rounded-xl border border-gray-100 p-8 flex flex-col items-center text-center shadow-sm hover:shadow-luxury transition-all duration-300 h-full mt-2 lg:mt-0" data-aos="flip-left" data-aos-delay="200">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyn-dGwWqKrMHeGO3S-p2hn5Nl_gJu2aNZFK5R9TTP8ak3Ek0hEGAb2ocy7rUcUmGI0OadwBgL_QwzjfLSJfBOBGEPJLSLFueidtQ3n1S7U7jtyGtz1FDug5kr6JsyNrRKm2WvFdDR1Rqk2wTB0qHf_eOqMOdBCqbo6fJ3l4jAgXmT9id61Y6xEndP3Lk7/s1254/9bac90b7-d75d-4b4e-912b-57da580fe8d1.png" alt="Aura Retail Group Logo" class="w-24 h-24 object-contain rounded-2xl border border-gray-100 p-3 bg-gray-50 mb-6">
+                    <h3 class="text-xl font-bold font-heading text-black mb-4 w-full border-b border-gray-100 pb-4">Aura Retail Group</h3>
+                    <div class="text-sm text-gray-600 space-y-2 mb-8 w-full flex-grow">
+                        <p><span class="font-bold text-black">Industry:</span> E-commerce</p>
+                        <p><span class="font-bold text-black">Services:</span> Dev & Performance Ads</p>
+                    </div>
+                    <div class="w-full bg-gold/5 border-l-[3px] border-gold p-4 text-left mt-auto">
+                        <p class="text-sm font-medium text-black">185% increase in online sales</p>
+                    </div>
+                </div>
+
+                <!-- Client 8 -->
+                <div class="bg-white rounded-xl border border-gray-100 p-8 flex flex-col items-center text-center shadow-sm hover:shadow-luxury transition-all duration-300 h-full mt-2 lg:mt-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8XLowIor-V-P-wM-N7orp6iJOo39GOZ-6dd1teNZiPMBVL3klsxszjw3XEeBgbNcuGL_OVDQdpBrmiXOh3CN7gcHVUvYHtMCKN3siFs7OLCO-w-gyQzasiTJGmiPChKFA34Jd1i8Ba9EqGVGxmRny1TiLmZcJ1rCYFK6Z8Yn52awO0z26tO2ywJNlDWcF/s1254/406d7d1b-fd6c-4f71-8c8a-bfd83bbe3b65.png" alt="Equinox Consulting Logo" class="w-24 h-24 object-contain rounded-2xl border border-gray-100 p-3 bg-gray-50 mb-6">
+                    <h3 class="text-xl font-bold font-heading text-black mb-4 w-full border-b border-gray-100 pb-4">Equinox Consulting</h3>
+                    <div class="text-sm text-gray-600 space-y-2 mb-8 w-full flex-grow">
+                        <p><span class="font-bold text-black">Industry:</span> Management Consulting</p>
+                        <p><span class="font-bold text-black">Services:</span> Digital PR & Branding</p>
+                    </div>
+                    <div class="w-full bg-gold/5 border-l-[3px] border-gold p-4 text-left mt-auto">
+                        <p class="text-sm font-medium text-black">Featured in top regional media</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="#contact" class="inline-block border-b-2 border-black pb-1 font-bold text-sm uppercase tracking-widest hover:text-gold hover:border-gold transition-colors">Discuss Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-16 md:py-20 bg-black relative border-y-4 border-gold">
+        <div class="container mx-auto px-6 md:px-12 relative z-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 text-center" id="counter-section">
+                
+                <div data-aos="fade-up" data-aos-delay="0">
+                    <div class="text-4xl md:text-6xl font-heading font-bold text-white mb-2"><span class="counter" data-target="150">0</span><span class="text-gold">+</span></div>
+                    <div class="text-[10px] md:text-sm uppercase tracking-widest text-gray-400 font-medium">Projects Completed</div>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl md:text-6xl font-heading font-bold text-white mb-2"><span class="counter" data-target="98">0</span><span class="text-gold">%</span></div>
+                    <div class="text-[10px] md:text-sm uppercase tracking-widest text-gray-400 font-medium">Client Satisfaction</div>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl md:text-6xl font-heading font-bold text-white mb-2"><span class="counter" data-target="50">0</span><span class="text-gold">+</span></div>
+                    <div class="text-[10px] md:text-sm uppercase tracking-widest text-gray-400 font-medium">Active Clients</div>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl md:text-6xl font-heading font-bold text-white mb-2"><span class="counter" data-target="5">0</span><span class="text-gold">+</span></div>
+                    <div class="text-[10px] md:text-sm uppercase tracking-widest text-gray-400 font-medium">Years Experience</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h4 class="text-gold font-bold uppercase tracking-widest text-sm mb-2">Client Success</h4>
+                <h2 class="text-4xl md:text-5xl font-heading font-bold text-black mb-6">What Our Clients Say</h2>
+            </div>
+
+            <!-- Carousel Container -->
+            <div id="testimonial-carousel" class="flex flex-row flex-nowrap overflow-x-auto snap-x snap-mandatory no-scrollbar gap-8 pb-12 pt-6 -mx-6 px-6 md:-mx-12 md:px-12" data-aos="fade-up" data-aos-delay="100">
+                
+                <!-- Testimonial 1 -->
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] bg-gray-50 border border-gray-100 p-8 rounded-xl shadow-sm relative group hover:shadow-luxury transition-shadow duration-300">
+                    <i class="fa-solid fa-quote-left absolute -top-4 right-8 text-5xl text-gold/20 group-hover:text-gold/40 transition-colors"></i>
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed relative z-10">"DEZINTY transformed our digital presence. As the best website developer we've worked with, their strategic approach to marketing increased our leads by 210%."</p>
+                    <div class="flex items-center">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinJVFsFKTX4XpvNyPZIlfcF-g2L1muEpP0aiQZHSWzBVSqlQ_qnvpBzZEWv-owuqz8yyzOWzU_YlUgcZxEkgwGdanMmmSb-fNYBRYQcP8aZu0NAT7XXhIGugRVIcTw-XBmff4otWfBpenzRAW5iiEBHS1atDmFz7dovjgItYHPjTJXh_Ug52n3qtSmCXBR/s868/Gemini_Generated_Image_neqi55neqi55neqi.png" alt="Ahmed Al Mansoori" class="w-12 h-12 rounded-full object-cover mr-4 border-2 border-gold">
+                        <div>
+                            <h4 class="font-bold font-heading text-black">Ahmed Al Mansoori</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">CEO, Al Qasr Properties</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] bg-gray-50 border border-gray-100 p-8 rounded-xl shadow-sm relative group hover:shadow-luxury transition-shadow duration-300">
+                    <i class="fa-solid fa-quote-left absolute -top-4 right-8 text-5xl text-gold/20 group-hover:text-gold/40 transition-colors"></i>
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed relative z-10">"The complete brand repositioning they executed for us is a masterpiece. They are truly the best web designer team in the UAE for corporate identity."</p>
+                    <div class="flex items-center">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr_C3HbAQC3IfC5RAvOLcTB0ffcQs8uZgf0LIx2qgsbUOKALZ7XQMYzLkFiBo_hZBr0ZYXZR8rOr0FEeyGkKAGpkvUo8S7juGJmZYHpUEyRDfLakqc_VWLfvqZ4f27xXsHeya4xWXRpFwYlTgGVsQGHC8ufXGTjwoIomkWg4hNGdeqoYQ-7lubz2BqnKhQ/s1024/Gemini_Generated_Image_xecfj7xecfj7xecf.png" alt="Sarah Richards" class="w-12 h-12 rounded-full object-cover mr-4 border-2 border-gold">
+                        <div>
+                            <h4 class="font-bold font-heading text-black">Sarah Richards</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">Director, Nexus Financial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] bg-gray-50 border border-gray-100 p-8 rounded-xl shadow-sm relative group hover:shadow-luxury transition-shadow duration-300">
+                    <i class="fa-solid fa-quote-left absolute -top-4 right-8 text-5xl text-gold/20 group-hover:text-gold/40 transition-colors"></i>
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed relative z-10">"Managing our luxury brand's social media was a challenge until DEZINTY stepped in. Their premium content and targeted ads delivered a 4.5x return on ad spend."</p>
+                    <div class="flex items-center">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijv4enbeS-IT_whfXE7bTsK_4lmVpDjnN93LCdNA6Kp3z99jvUG-PZI_NGqaNqJhH4W8ibnZISNpOTjbwU3dgnfv5s92a35geB8gbUz7PwR9sjhJ9DmxKMeV0dWBdOD5I4o3qmDP_tndSClLPGeFYdR84JDZLZPrnGIuKurtsSHQ4rO7UoposKGQGGEnav/s1024/Gemini_Generated_Image_a4p9ba4p9ba4p9ba.png" alt="Khalid Hassan" class="w-12 h-12 rounded-full object-cover mr-4 border-2 border-gold">
+                        <div>
+                            <h4 class="font-bold font-heading text-black">Khalid Hassan</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">Founder, Lumina Hospitality</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] bg-gray-50 border border-gray-100 p-8 rounded-xl shadow-sm relative group hover:shadow-luxury transition-shadow duration-300">
+                    <i class="fa-solid fa-quote-left absolute -top-4 right-8 text-5xl text-gold/20 group-hover:text-gold/40 transition-colors"></i>
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed relative z-10">"The custom web application DEZINTY developed completely streamlined our client portal. Their technical expertise as web developers is unmatched in the region."</p>
+                    <div class="flex items-center">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipTQa6bKdzqXiJNQYSUVpzAz0jY3Djk_EOC2AGzbfI9YwH9FAkcEwj2os0_57ZleH-L-QeFv57ECtW5WSkkNG3ztHDR3NF7U5BqefHVl7EJd89ObvUbKv6wJbmyObaM63KagGpMpAqT2O_kKAjpTJzI9dLv9zDxs6ZeMXSFrq7nuAGbmBK3Dx3znIpY2ps/s1024/Gemini_Generated_Image_dptzz4dptzz4dptz.png" alt="David Chen" class="w-12 h-12 rounded-full object-cover mr-4 border-2 border-gold">
+                        <div>
+                            <h4 class="font-bold font-heading text-black">David Chen</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">Head of Operations, Vertex Engineering</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Testimonial 5 -->
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] bg-gray-50 border border-gray-100 p-8 rounded-xl shadow-sm relative group hover:shadow-luxury transition-shadow duration-300">
+                    <i class="fa-solid fa-quote-left absolute -top-4 right-8 text-5xl text-gold/20 group-hover:text-gold/40 transition-colors"></i>
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed relative z-10">"Thanks to their comprehensive SEO and content marketing strategy, we now rank #1 for our most critical procedures. Our organic patient inquiries have skyrocketed since partnering with them."</p>
+                    <div class="flex items-center">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_0GorDAB9udNfpdEBe7WHpRARN6DJc6ygTAnKOBqnCdq71cfh0nYHQwJmvtDBoZLH1mOxVwmUun4ts0r61UurhxUsRBRX1l6tCDGn18Pk3516vUKavJpdAaOaWwTvpxBRj3i6b0hGf-gyaYkVCzjz_qQokfcjFRvLubWMMZo-IjFHPCMinloGJPTEFTmp/s1024/Gemini_Generated_Image_irmlvdirmlvdirml.png" alt="Dr. Aisha Rahman" class="w-12 h-12 rounded-full object-cover mr-4 border-2 border-gold">
+                        <div>
+                            <h4 class="font-bold font-heading text-black">Dr. Aisha Rahman</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">Chief Medical Officer, Crescent Medical</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] bg-gray-50 border border-gray-100 p-8 rounded-xl shadow-sm relative group hover:shadow-luxury transition-shadow duration-300">
+                    <i class="fa-solid fa-quote-left absolute -top-4 right-8 text-5xl text-gold/20 group-hover:text-gold/40 transition-colors"></i>
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed relative z-10">"DEZINTY's B2B lead generation campaigns are incredibly effective. We've seen a 300% growth in qualified inquiries from enterprise clients. They truly understand the B2B landscape in the GCC."</p>
+                    <div class="flex items-center">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlSMugAOUOUw3YDBihSOkRNG4nnMdlGOfC_qJjl3Y1b_HeVKZ1kpRKOwniMZ2V_dw3pVtba-sBD9KGf4cv_2N7Tuw_cEPpP-sETqFeVQw4Xaa7FLxtrEa3mR1sddF39UwMBrz_EJVH8jBl9BOp_AbipCH9FNY9ezSGVN_lB6hduZOhYMGYrIcNIJ9tPmxL/s1024/Gemini_Generated_Image_1nuifl1nuifl1nui.png" alt="Thomas Wright" class="w-12 h-12 rounded-full object-cover mr-4 border-2 border-gold">
+                        <div>
+                            <h4 class="font-bold font-heading text-black">Thomas Wright</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">Managing Director, Meridian Logistics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 7 -->
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] bg-gray-50 border border-gray-100 p-8 rounded-xl shadow-sm relative group hover:shadow-luxury transition-shadow duration-300">
+                    <i class="fa-solid fa-quote-left absolute -top-4 right-8 text-5xl text-gold/20 group-hover:text-gold/40 transition-colors"></i>
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed relative z-10">"Our e-commerce sales jumped 185% after DEZINTY redesigned our platform and took over our performance ads. The user experience is flawless, and the conversion rates are incredible."</p>
+                    <div class="flex items-center">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGVho45lR6ttAcsSYHqXk82NaP_9iwIi5J8VIwS8MDXLZlODuWo1N3hyphenhyphenb-l7XKLWQu14JbZ6t-jJFyiU3b7HkVTcf1kx0pc80OycQ0DF4hB3G_Cu9AcT273ir88h_jk_RjwuKPIvIGZLE5OKHRPqliMFWPQYJdJfkxmxA6MPlvyuiTlrh-lvigoiEnncEu/s1024/Gemini_Generated_Image_fqdb6nfqdb6nfqdb.png" alt="Fatima Al Zahra" class="w-12 h-12 rounded-full object-cover mr-4 border-2 border-gold">
+                        <div>
+                            <h4 class="font-bold font-heading text-black">Fatima Al Zahra</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">CMO, Aura Retail Group</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 8 -->
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] bg-gray-50 border border-gray-100 p-8 rounded-xl shadow-sm relative group hover:shadow-luxury transition-shadow duration-300">
+                    <i class="fa-solid fa-quote-left absolute -top-4 right-8 text-5xl text-gold/20 group-hover:text-gold/40 transition-colors"></i>
+                    <div class="flex text-gold text-sm mb-6">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed relative z-10">"Their digital PR and branding efforts positioned us perfectly in the regional media. DEZINTY doesn't just build websites; they build industry leaders. A phenomenal partner for long-term growth."</p>
+                    <div class="flex items-center">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcLTbe-eVXtAgW9TtgvwBwQ2y6ZmU3wXU9EWZzMSdKrP0FKQ8C-Gxe_-nC1iy5gmWF9ZJJtB5vstLu3P4TubTWFj9rsBH2LvxDtZHr2pSx_5MuPx_dJHREDMcKyd3vpp0ZMQh9OSytWKlvopAFC_JJKYFUnFA4RSOlH17bC29AowlYDQIStMQiCJRXrg1j/s1024/Gemini_Generated_Image_cyprs2cyprs2cypr.png" alt="Marcus Vane" class="w-12 h-12 rounded-full object-cover mr-4 border-2 border-gold">
+                        <div>
+                            <h4 class="font-bold font-heading text-black">Marcus Vane</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">Managing Partner, Equinox Consulting</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div id="testimonial-dots" class="flex justify-center gap-3 mt-4">
+                <button class="w-3 h-3 rounded-full bg-black transition-colors" aria-label="Go to review 1"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" aria-label="Go to review 2"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" aria-label="Go to review 3"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" aria-label="Go to review 4"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" aria-label="Go to review 5"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" aria-label="Go to review 6"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" aria-label="Go to review 7"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" aria-label="Go to review 8"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12 max-w-4xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h4 class="text-gold font-bold uppercase tracking-widest text-sm mb-2">Insights</h4>
+                <h2 class="text-4xl font-heading font-bold text-black">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+                <!-- FAQ 1 -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors">
+                        <span class="font-heading font-semibold text-lg text-black">Why choose DEZINTY as my website developer?</span>
+                        <i class="fa-solid fa-plus text-gold transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6">
+                        <p class="pb-6 text-gray-600 text-sm leading-relaxed">DEZINTY specializes in high-end, conversion-focused digital solutions tailored for the UAE market. We combine luxury aesthetics with powerful underlying technology and data-driven marketing to ensure exceptional ROI for our partners.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors">
+                        <span class="font-heading font-semibold text-lg text-black">How long does website development typically take?</span>
+                        <i class="fa-solid fa-plus text-gold transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6">
+                        <p class="pb-6 text-gray-600 text-sm leading-relaxed">A standard premium corporate website usually takes between 4 to 8 weeks from discovery to launch. Complex e-commerce platforms or custom web applications may require 10-16 weeks, depending on specific requirements and functionalities.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors">
+                        <span class="font-heading font-semibold text-lg text-black">Do you provide ongoing SEO services?</span>
+                        <i class="fa-solid fa-plus text-gold transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6">
+                        <p class="pb-6 text-gray-600 text-sm leading-relaxed">Yes, SEO is an ongoing process. We offer comprehensive monthly SEO retainers that include technical audits, content creation, on-page optimization, and authority link-building to secure and maintain top search rankings in the UAE.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors">
+                        <span class="font-heading font-semibold text-lg text-black">What makes DEZINTY the best website developer in UAE?</span>
+                        <i class="fa-solid fa-plus text-gold transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6">
+                        <p class="pb-6 text-gray-600 text-sm leading-relaxed">We combine luxury aesthetics with cutting-edge technology. As the <strong>best website developer in UAE</strong>, our expert <strong>web developers</strong> build custom, high-performance platforms designed to convert traffic into revenue, outperforming standard templates used by other agencies.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors">
+                        <span class="font-heading font-semibold text-lg text-black">Do I need to hire a professional website designer?</span>
+                        <i class="fa-solid fa-plus text-gold transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6">
+                        <p class="pb-6 text-gray-600 text-sm leading-relaxed">Absolutely. First impressions matter. Hiring the <strong>best website designer</strong> ensures your brand stands out in a competitive digital landscape. Being recognized as the <strong>best website designer in UAE</strong>, we craft stunning, user-centric interfaces that elevate your corporate identity.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors">
+                        <span class="font-heading font-semibold text-lg text-black">What is the difference between a web developer and web designer?</span>
+                        <i class="fa-solid fa-plus text-gold transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6">
+                        <p class="pb-6 text-gray-600 text-sm leading-relaxed">A <strong>web designer</strong> focuses on the visual aesthetics and user experience (UI/UX), while a <strong>web developer</strong> handles the backend coding and technical functionality. At DEZINTY, you get both! We provide the <strong>best web developer</strong> and <strong>best web designer</strong> talent under one roof.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors">
+                        <span class="font-heading font-semibold text-lg text-black">Can your web developers help redesign my existing site?</span>
+                        <i class="fa-solid fa-plus text-gold transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6">
+                        <p class="pb-6 text-gray-600 text-sm leading-relaxed">Yes, our team of the <strong>best web developers in UAE</strong> can completely revamp your outdated website. We integrate modern aesthetics crafted by our expert <strong>web designers</strong> with robust backend architecture to ensure your new site ranks high and performs flawlessly.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors">
+                        <span class="font-heading font-semibold text-lg text-black">How do I choose the best web developer in UAE for my project?</span>
+                        <i class="fa-solid fa-plus text-gold transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6">
+                        <p class="pb-6 text-gray-600 text-sm leading-relaxed">When looking for the <strong>best web developer in UAE</strong> or the <strong>best website designer in UAE</strong>, you should review their portfolio, client ROI, and technical expertise. DEZINTY combines award-winning design with strategic marketing, making us the top premium <strong>website developer</strong> agency.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="flex flex-col lg:flex-row gap-16">
+                
+                <!-- Contact Info -->
+                <div class="w-full lg:w-5/12" data-aos="fade-right">
+                    <h4 class="text-gold font-bold uppercase tracking-widest text-sm mb-2">Get In Touch</h4>
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-black mb-6">Let's Build Something Extraordinary.</h2>
+                    <p class="text-gray-600 mb-10 leading-relaxed">Ready to elevate your digital presence? Contact our team of expert web developers and designers in the UAE for a comprehensive consultation.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center mr-6 shrink-0 border border-gray-100">
+                                <i class="fa-solid fa-location-dot text-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-black mb-1">Headquarters</h4>
+                                <p class="text-sm text-gray-600">Business Bay, Dubai<br>United Arab Emirates</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center mr-6 shrink-0 border border-gray-100">
+                                <i class="fa-solid fa-phone text-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-black mb-1">Phone & WhatsApp</h4>
+                                <p class="text-sm text-gray-600">+971 52 452 9417<br>Mon-Fri, 9am until 6pm</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center mr-6 shrink-0 border border-gray-100">
+                                <i class="fa-solid fa-envelope text-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-black mb-1">Email Address</h4>
+                                <p class="text-sm text-gray-600">dezintydxb@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="w-full lg:w-7/12" data-aos="fade-left" data-aos-delay="100">
+                    <div class="bg-gray-50 p-8 md:p-12 rounded-2xl border border-gray-100 shadow-sm">
+                        <form id="contactForm">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Full Name</label>
+                                    <input type="text" id="fullName" required class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Company Name</label>
+                                    <input type="text" id="companyName" class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors text-sm">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Email Address</label>
+                                    <input type="email" id="emailAddr" required class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Phone Number</label>
+                                    <input type="tel" id="phoneNum" required class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors text-sm">
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Service Interested In</label>
+                                <select id="serviceSelect" class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors text-sm appearance-none cursor-pointer">
+                                    <option value="Website Development">Website Development</option>
+                                    <option value="Web Design">Web Design</option>
+                                    <option value="Digital Marketing & SEO">Digital Marketing & SEO</option>
+                                    <option value="Social Media Management">Social Media Management</option>
+                                    <option value="Comprehensive Package">Comprehensive Package</option>
+                                </select>
+                            </div>
+                            <div class="mb-8">
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Project Details</label>
+                                <textarea id="projectDetails" rows="4" required class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors text-sm resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-black text-white py-4 rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-gold transition-colors duration-300 shadow-md">
+                                Request Proposal
+                            </button>
+                            <div id="formSuccess" class="hidden mt-4 p-4 bg-green-50 text-green-700 border border-green-200 rounded-lg text-sm text-center font-medium">
+                                Thank you! Your proposal request has been received. Redirecting to WhatsApp...
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/971524529417" class="fixed bottom-6 right-6 z-40 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 transition-transform duration-300 before:absolute before:inset-0 before:bg-[#25D366] before:rounded-full before:animate-ping before:-z-10">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-20 pb-10 text-white border-t-[6px] border-gold">
+        <div class="container mx-auto px-6 md:px-12" data-aos="fade-up">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <a href="#" class="text-3xl font-heading font-bold tracking-widest text-white flex items-center gap-2 mb-6">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBBsY39phpUA2PbADetNl4YgYavGWa4YYo2sIEeZBAydpSZ5uzvogqIn8ftqmjlxySuygXLxdEoo-ll5rW76FT2Zru1pu46jpd-34Fc5uCaO1nSd_nGh1ktRbnLhgCjLKQdEW1mempdlbxkEG4la0M-892f-mpics3EAK8VFQ5QUNspQg8VCltFjKhKIo/s1121/1000254010.png" alt="DEZINTY Logo - Best Web Developer in UAE" class="w-10 h-10 rounded-sm bg-white/10 p-1">
+                        DEZINTY
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        The UAE's premier digital growth partner and best website designer. We combine luxury design with powerful technology to transform businesses into industry leaders.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-gold hover:border-gold transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-gold hover:border-gold transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-gold hover:border-gold transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-6 border-b border-gray-800 pb-2 inline-block">Company</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#about" class="hover:text-gold transition-colors flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-gold"></i> About Us</a></li>
+                        <li><a href="#portfolio" class="hover:text-gold transition-colors flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-gold"></i> Our Portfolio</a></li>
+                        <li><a href="#process" class="hover:text-gold transition-colors flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-gold"></i> Work Process</a></li>
+                        <li><a href="#testimonials" class="hover:text-gold transition-colors flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-gold"></i> Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-gold transition-colors flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-gold"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-6 border-b border-gray-800 pb-2 inline-block">Services</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#services" class="hover:text-gold transition-colors flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-gold"></i> Website Development</a></li>
+                        <li><a href="#services" class="hover:text-gold transition-colors flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-gold"></i> Branding & Web Design</a></li>
+                        <li><a href="#services" class="hover:text-gold transition-colors flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-gold"></i> Social Media Management</a></li>
+                        <li><a href="#services" class="hover:text-gold transition-colors flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-gold"></i> Performance Marketing</a></li>
+                        <li><a href="#services" class="hover:text-gold transition-colors flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-gold"></i> SEO Optimization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-6 border-b border-gray-800 pb-2 inline-block">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe to receive premium digital insights from the best web developers in the UAE.</p>
+                    <form onsubmit="event.preventDefault();" class="flex flex-col space-y-3">
+                        <input type="email" placeholder="Corporate Email Address" class="bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold text-white">
+                        <button class="bg-gold text-black font-bold uppercase tracking-widest text-xs py-3 rounded-lg hover:bg-white transition-colors">Subscribe Now</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 DEZINTY Digital Agency - Best Website Developer UAE. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Preloader
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+            }, 500); // Slight delay for premium feel
+        });
+
+        // Sticky Navbar
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-header', 'shadow-sm');
+                navbar.classList.remove('bg-transparent', 'py-6');
+                navbar.classList.add('py-4');
+            } else {
+                navbar.classList.remove('glass-header', 'shadow-sm', 'py-4');
+                navbar.classList.add('bg-transparent', 'py-6');
+            }
+        });
+
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            if (mobileMenu.classList.contains('translate-x-full')) {
+                mobileMenu.classList.remove('translate-x-full');
+            } else {
+                mobileMenu.classList.add('translate-x-full');
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        mobileMenuClose.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+        // Intersection Observer for Counters Only
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const counterObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.id === 'counter-section') {
+                        startCounters();
+                        observer.unobserve(entry.target); 
+                    }
+                }
+            });
+        }, observerOptions);
+
+        const counterSection = document.getElementById('counter-section');
+        if(counterSection) counterObserver.observe(counterSection);
+
+        // Counter Animation Logic
+        let countersStarted = false;
+        function startCounters() {
+            if (countersStarted) return;
+            countersStarted = true;
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200; // The lower the slower
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 15);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        // Portfolio Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-black', 'text-white');
+                    b.classList.add('bg-transparent', 'text-black');
+                });
+                // Add active class to clicked
+                btn.classList.remove('bg-transparent', 'text-black');
+                btn.classList.add('bg-black', 'text-white');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // FAQ Accordion
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isOpen = content.classList.contains('open');
+
+                // Close all others
+                document.querySelectorAll('.faq-content').forEach(c => {
+                    c.style.maxHeight = null;
+                    c.classList.remove('open');
+                });
+                document.querySelectorAll('.faq-btn i').forEach(i => {
+                    i.classList.remove('rotate-45', 'text-black');
+                    i.classList.add('text-gold');
+                });
+
+                if (!isOpen) {
+                    content.classList.add('open');
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.classList.remove('text-gold');
+                    icon.classList.add('rotate-45', 'text-black');
+                }
+            });
+        });
+
+        // WhatsApp Form Submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent standard form submission
+
+                // Collect form data
+                const name = document.getElementById('fullName').value;
+                const company = document.getElementById('companyName').value || 'Not provided';
+                const email = document.getElementById('emailAddr').value;
+                const phone = document.getElementById('phoneNum').value;
+                const service = document.getElementById('serviceSelect').value;
+                const details = document.getElementById('projectDetails').value;
+
+                // Format the message for WhatsApp
+                const whatsappMessage = `*New Proposal Request - DEZINTY*%0A` +
+                                        `---------------------------%0A` +
+                                        `*Name:* ${encodeURIComponent(name)}%0A` +
+                                        `*Company:* ${encodeURIComponent(company)}%0A` +
+                                        `*Email:* ${encodeURIComponent(email)}%0A` +
+                                        `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                                        `*Service Needed:* ${encodeURIComponent(service)}%0A` +
+                                        `*Project Details:* ${encodeURIComponent(details)}%0A` +
+                                        `---------------------------%0A` +
+                                        `_Submitted via DEZINTY Website_`;
+
+                // Define the WhatsApp number (Format: country code + number, no plus or spaces)
+                const whatsappNumber = '971524529417'; // Change this to the actual business WhatsApp number
+
+                // Create WhatsApp URL
+                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+                // Open WhatsApp in a new tab
+                window.open(whatsappUrl, '_blank');
+
+                // Show success message and reset form visually
+                const successMsg = document.getElementById('formSuccess');
+                if (successMsg) {
+                    successMsg.classList.remove('hidden');
+                    setTimeout(() => {
+                        successMsg.classList.add('hidden');
+                        contactForm.reset();
+                    }, 5000);
+                }
+            });
+        }
+
+        // Testimonial Carousel Dots Synchronization
+        const carousel = document.getElementById('testimonial-carousel');
+        const dotsContainer = document.getElementById('testimonial-dots');
+
+        if (carousel && dotsContainer) {
+            const dots = dotsContainer.querySelectorAll('button');
+            const cards = carousel.querySelectorAll('.snap-center');
+
+            // Click dot to scroll to specific card
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    const card = cards[index];
+                    // Smoothly scroll the selected card into the center of the carousel
+                    card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                });
+            });
+
+            // Update active dot based on scroll position using IntersectionObserver
+            const carouselObserverOptions = {
+                root: carousel,
+                rootMargin: '0px',
+                threshold: 0.6 // Trigger when 60% of the card is visible in the container
+            };
+
+            const carouselObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const activeIndex = Array.from(cards).indexOf(entry.target);
+                        
+                        // Update styling for active/inactive dots
+                        dots.forEach((dot, i) => {
+                            if (i === activeIndex) {
+                                dot.classList.remove('bg-gray-300', 'hover:bg-gray-400');
+                                dot.classList.add('bg-black');
+                            } else {
+                                dot.classList.add('bg-gray-300', 'hover:bg-gray-400');
+                                dot.classList.remove('bg-black');
+                            }
+                        });
+                    }
+                });
+            }, carouselObserverOptions);
+
+            cards.forEach(card => carouselObserver.observe(card));
+        }
+    </script>
+</body>
+</html>
